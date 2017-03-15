@@ -11,8 +11,8 @@ class HomeController extends Controller
     public function index()
     {
         
-        $advertising =' Advertising::';
+        $advertising = Advertising::where('category_id', 1)->get();
 
-        return view('home',['']);
+        return view('home',['advertising' => $advertising]);
     }
 }

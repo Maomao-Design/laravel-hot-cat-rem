@@ -3,67 +3,8 @@
 @section('title', 'Index Title') 
 
 @section('content')
-<section>
-    <div data-loop="false" data-autoplay="false" data-simulate-touch="true" class="swiper-container swiper-slider swiper-variant-1 bg-gray-base">
-        <div class="swiper-wrapper text-center">
-            <div data-slide-bg="/jcb/images/home-slider-1-slide-1.jpg" class="swiper-slide">
-                <div class="swiper-slide-caption">
-                    <div class="shell">
-                        <div class="range range-sm-center">
-                            <div class="cell-sm-11 cell-md-10 cell-lg-9">
-                                <h2 data-caption-animate="fadeInUp" data-caption-delay="0s" class="slider-header">Welcome to Starbis</h2>
-                                <p data-caption-animate="fadeInUp" data-caption-delay="100" class="text-bigger slider-text">The smartest and most flexible Bootstrap template by TemplateMonster you've ever seen. Create
-                                    exactly what you need with our powerful Bootstrap toolkit.</p>
-                                <div class="group-xl-responsive offset-top-30 offset-sm-top-45"><a data-caption-animate="fadeInUp" data-caption-delay="250" href="#" data-custom-scroll-to="section-start-journey"
-                                        class="btn btn-xl btn-white-outline-variant-1">Start a journey</a>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-slide-bg="/jcb/images/home-slider-1-slide-2.jpg" class="swiper-slide">
-                <div class="swiper-slide-caption">
-                    <div class="shell">
-                        <div class="range range-sm-center">
-                            <div class="cell-sm-11 cell-md-10 cell-lg-9">
-                                <h2 data-caption-animate="fadeInUp" data-caption-delay="0s" class="slider-header">Unlimited Opportunities</h2>
-                                <p data-caption-animate="fadeInUp" data-caption-delay="100" class="text-bigger slider-text">Starbis is the easiest way for you to build different sites without using many themes</p>
-                                <div class="group-xl-responsive offset-top-30 offset-sm-top-45"><a data-caption-animate="fadeInUp" data-caption-delay="250" href="#" data-custom-scroll-to="section-start-journey"
-                                        class="btn btn-xl btn-white-outline-variant-1">Start a journey</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-slide-bg="/jcb/images/home-slider-1-slide-3.jpg" class="swiper-slide">
-                <div class="swiper-slide-caption">
-                    <div class="shell">
-                        <div class="range range-sm-center">
-                            <div class="cell-sm-11 cell-md-10 cell-lg-9">
-                                <h2 data-caption-animate="fadeInUp" data-caption-delay="0s" class="slider-header">Ultra Sharp & Responsive</h2>
-                                <p data-caption-animate="fadeInUp" data-caption-delay="100" class="text-bigger slider-text">Beautiful and clean designs are optimized for all screen sizes and types. Taste a new meaning
-                                    of Retina Ready.</p>
-                                <div class="group-xl-responsive offset-top-30 offset-sm-top-45"><a data-caption-animate="fadeInUp" data-caption-delay="250" href="#" data-custom-scroll-to="section-start-journey"
-                                        class="btn btn-xl btn-white-outline-variant-1">Start a journey</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-scrollbar"></div>
-        <div class="swiper-nav-wrap">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-</section>
+@include('index.banner')
 
 
 <section id="section-start-journey" class="section-50 section-sm-90 section-lg-top-120 section-lg-bottom-145">
