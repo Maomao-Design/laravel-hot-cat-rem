@@ -33,7 +33,7 @@ var userAgent = navigator.userAgent.toLowerCase(),
         selectFilter: $("select"),
         rdInputLabel: $(".form-label"),
         bootstrapDateTimePicker: $("[data-time-picker]"),
-        customWaypoints: $('[data-custom-scroll-to]'),
+        // customWaypoints: $('[data-custom-scroll-to]'),
         photoSwipeGallery: $("[data-photo-swipe-item]"),
         stepper: $("input[type='number']"),
         radio: $("input[type='radio']"),
@@ -1185,20 +1185,20 @@ $document.ready(function () {
         }
     }
     if (isNoviBuilder !== "designMode") {
-        if (plugins.customWaypoints.length) {
-            var i;
-            for (i = 0; i < plugins.customWaypoints.length; i++) {
-                var $this = $(plugins.customWaypoints[i]);
-                $this.on('click', function (e) {
-                    e.preventDefault();
-                    $("body, html").stop().animate({
-                        scrollTop: $("#" + $(this).attr('data-custom-scroll-to')).offset().top
-                    }, 1000, function () {
-                        $(window).trigger("resize");
-                    });
-                });
-            }
-        }
+        // if (plugins.customWaypoints.length) {
+        //     var i;
+        //     // for (i = 0; i < plugins.customWaypoints.length; i++) {
+        //     //     var $this = $(plugins.customWaypoints[i]);
+        //     //     $this.on('click', function (e) {
+        //     //         e.preventDefault();
+        //     //         $("body, html").stop().animate({
+        //     //             scrollTop: $("#" + $(this).attr('data-custom-scroll-to')).offset().top
+        //     //         }, 1000, function () {
+        //     //             $(window).trigger("resize");
+        //     //         });
+        //     //     });
+        //     // }
+        // }
     }
     if (isNoviBuilder !== "designMode") {
         if (plugins.rdParallax.length && !isMobile) {

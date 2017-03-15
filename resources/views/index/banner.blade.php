@@ -13,9 +13,12 @@
                                 <p data-caption-animate="fadeInUp" data-caption-delay="100" class="text-bigger slider-text">
                                     {{ $ad->description}}
                                 </p>
-                                <div class="group-xl-responsive offset-top-30 offset-sm-top-45"><a data-caption-animate="fadeInUp" data-caption-delay="250" href="#" data-custom-scroll-to="section-start-journey"
-                                        class="btn btn-xl btn-white-outline-variant-1">SEE MORE  ></a>
-
+                                <div class="group-xl-responsive offset-top-30 offset-sm-top-45">
+                                    <a data-caption-animate="fadeInUp" data-caption-delay="250" 
+                                        href="{{ $ad->link}}" 
+                                        class="btn btn-xl btn-white-outline-variant-1">
+                                        SEE MORE  >
+                                    </a>
                                 </div>
                             </div>
                         </div>
