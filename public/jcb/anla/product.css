@@ -1,0 +1,175 @@
+.product-title{
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 10px;
+}
+.product-title h6{
+    font-size: 14px;
+    color: #000;
+}
+.product-title p{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+.product-new{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 100%;
+    top: 0;
+    right: 0;
+    background-color: #196dd7;
+    z-index: 999;
+    color: #FFF;
+}
+
+
+.btn-blue-ma{
+    color: #fff;
+    background-color: #196dd7;
+    border-color: #196dd7;
+}
+
+.btn-blue-ma:hover{
+   opacity: .8;
+}
+
+.font-n16{
+    font-size: 16px;
+}
+
+.font-n24{
+    font-size: 24px;
+}
+
+.find-us{
+    position: relative;
+    transform: translateY(-23px);
+    color: #196dd7;
+}
+
+.find-us .fa{
+
+    color: #196dd7;
+}
+
+.find-us:hover{
+    opacity: .8;
+}
+
+.about-blockquote{
+    padding-left: 20px;
+    font-size: 26px;
+    border-left: 5px solid #232323;
+    color: #232323;
+}
+
+.about-description{
+    padding: 80px 0;
+}
+
+.about-description p{
+    font-size: 16px;
+    color: #232323;
+}
+
+.about-other-wrap{
+    max-width: 800px;
+    margin: 50px auto;
+    font-size: 16px;
+
+}
+.about-other-wrap p{
+    font-size: 16px;
+    color: #232323;
+}
+
+.no-cell-pl{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.about-footer-content{
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.about-more{
+    padding-top: 30px;
+}
+
+.ajax-more-btn .fa{
+    /*visibility: hidden;*/
+    margin-left: 10px;
+    display: none;
+}
+
+.ajax-more-btn.ajax-loading .fa{
+    /*visibility:inherit;*/
+    display: inline-block;
+}
+
+.product-class-title{
+    font-size: 30px;
+    color: #666;
+}
+
+.product-details-title h3{
+    font-size: 24px;
+    color: #666;
+}
+.product-details-title p{
+    font-size: 16px;
+    color: #666;
+}
+
+.product-detail-body{
+    /*padding-top: 50px;*/
+}
+
+.product-paging{
+    background-color: #196dd7;
+}
+
+.product-paging a{
+    color: #FFF;
+}
+.product-paging a:hover{
+    color: #333;
+}
+
+.news-paging{
+    /*background-color: #196dd7;*/
+}
+
+.news-paging a{
+    color: #232323;
+}
+.news-paging a:hover{
+    color: #333;
+}
+
+.new-detail-max-width{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.main-title-color{
+    color: #232323;
+}
+.new-detail-title{
+    font-size: 26px;
+}
+
+.new-detail-time{
+    padding-bottom: 30px;
+}
+
+.new-detail-body{
+    padding-top: 30px;
+    color: #232323;
+}
