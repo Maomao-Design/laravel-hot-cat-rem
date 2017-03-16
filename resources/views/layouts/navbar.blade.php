@@ -6,7 +6,7 @@
             <div class="rd-navbar-inner">
                 <div class="rd-navbar-panel">
                     <button data-custom-toggle=".rd-navbar-nav-wrap" data-custom-toggle-disable-on-blur="true" class="rd-navbar-toggle"><span></span></button>
-                    <a href="index-variant-2.html" class="rd-navbar-brand brand"><img src="/jcb/imgs/logo.png" width="139" height="22" alt="logo" /></a>
+                    <a href="/" class="rd-navbar-brand brand"><img src="/jcb/imgs/logo.png" width="139" height="22" alt="logo" /></a>
                 </div>
                 <div class="rd-navbar-group rd-navbar-search-wrap">
                     <div class="rd-navbar-nav-wrap">
@@ -23,71 +23,58 @@
                                 <button data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar-search-wrap" class="color-blue rd-navbar-search-toggle"></button>
                             </div>
                             <ul class="rd-navbar-nav">
-                                <li class=""><a href="index-variant-2.html">Home</a>
+                                <li class=""><a href="/">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#">About Us</a>
+                                    <a href="/page/about">About Us</a>
 
                                 </li>
-                                <li><a href="#">Pages</a>
+                                <li><a href="#">Products</a>
                                     <ul class="rd-navbar-megamenu">
 
                                         <li>
                                             <div class="nav-dropdown-box">
-                                                <h6 class="rd-megamenu-header">Extras</h6>
+                                                <h6 class="rd-megamenu-header">Cables & Accessories </h6>
                                                 <ul class="rd-navbar-list">
-                                                    <li><a href="404-page.html">404 Page</a></li>
-                                                    <li><a href="503-page.html">503 Page</a></li>
-                                                    <li><a href="maintenance.html">Maintenance</a></li>
-                                                    <li><a href="coming-soon.html">Coming soon</a></li>
-                                                    <li><a href="login.html">Login</a></li>
-                                                    <li><a href="register.html">Register</a></li>
-                                                    <li><a href="search-results.html">Search results</a></li>
-                                                    <li><a href="privacy-policy.html">Terms of use</a></li>
+                                                    <li><a href="">CABLE</a></li>
+                                                    <li><a href="">6KTV-1008dg</a></li>
+                                                    <li><a href="">14KV-98cs</a></li>
+                                                    <li><a href="">76op-xvd8</a></li>
+                                                    <li><a href="">zvfv346-09</a></li>
+                                                    <li><a href="">687fbf-io</a></li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="nav-dropdown-box">
-                                                <h6 class="rd-megamenu-header">Layout</h6>
+                                                <h6 class="rd-megamenu-header">Industrial Automation Device ></h6>
                                                 <ul class="rd-navbar-list">
-                                                    <li><a href="header-default.html">Header Default</a></li>
-                                                    <li><a href="header-corporate-light.html">Header Corporate Light</a></li>
-                                                    <li><a href="header-corporate-dark.html">Header Corporate Dark</a></li>
-                                                    <li><a href="footer-default.html">Footer Default</a></li>
-                                                    <li><a href="footer-widget.html">Footer Widget</a></li>
-                                                    <li><a href="footer-corporate.html">Footer Corporate</a></li>
+                                                    <li><a href="">AUTOMATION INDUSTRIES</a></li>
+                                                    <li><a href="">Automotive</a></li>
+                                                    <li><a href="">Chemical</a></li>
+                                                    <li><a href="">Downstream Hydrocarbons</a></li>
+                                                    <li><a href="">Food & Beverage</a></li>
+                                                    <li><a href="">Industrial Energy & Onsite Utilities</a></li>
                                                 </ul>
                                             </div>
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Portfolio</a>
-                                    <ul class="rd-navbar-dropdown">
-                                        <li><a href="gallery-grid.html">Gallery grid</a>
-                                        </li>
-                                        <li><a href="gallery-masonry.html">Gallery masonry</a>
-                                        </li>
-                                        <li><a href="gallery-cobbles.html">Gallery cobbles</a>
-                                        </li>
-                                        <li><a href="gallery-item.html">Gallery item</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Blog</a>
+
+                                <li><a href="/down">Downloads </a>
 
                                 </li>
-                                <li><a href="#">Shop</a>
+                                <li><a href="/posts">News & Events</a>
 
                                 </li>
-                                <li><a href="#">Components</a>
-
+                                <li>
+                                    <a href="/page/contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="rd-navbar-shop">
-                        <a href="shop-cart.html" class="link-lang">
+                        <a href="" class="link-lang">
                             中文
                         </a>
                     </div>

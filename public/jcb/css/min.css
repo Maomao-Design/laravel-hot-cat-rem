@@ -2733,6 +2733,11 @@ input[type="button"].btn-block {
     margin-left: 100%;
 }
 
+.col-xs-pd-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 @media (min-width: 768px) {
     .col-sm-1,
     .col-sm-2,
@@ -2900,6 +2905,11 @@ input[type="button"].btn-block {
     }
     .col-sm-offset-12 {
         margin-left: 100%;
+    }
+
+    .col-sm-pd-0 {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -3071,6 +3081,11 @@ input[type="button"].btn-block {
     .col-md-offset-12 {
         margin-left: 100%;
     }
+
+    .col-md-pd-0 {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -3240,6 +3255,11 @@ input[type="button"].btn-block {
     }
     .col-lg-offset-12 {
         margin-left: 100%;
+    }
+
+    .col-lg-pd-0 {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
