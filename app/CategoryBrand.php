@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 
-class CategoryProductBig extends Model
+class CategoryBrand extends Model
 {
     
 }

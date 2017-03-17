@@ -16,14 +16,16 @@
 // });
 
 
-Route::get('/',['as' => 'root', 'uses' => 'HomeController@index']);
+Route::get('/',['as' => 'home', 'uses' => 'HomeController@index']);
 
 Route::get('page/{slug}', ['as' => 'page', 'uses' => 'PageController@index']);
 
-Route::get('products', ['as' => 'products', 'uses' => 'ProductController@index']);
-Route::get('product/categories', ['as' => 'productCategories', 'uses' => 'ProductController@category']);
+Route::get('down', ['as' => 'down', 'uses' => 'DownController@index']);
 
-Route::get('product/detail', ['as' => 'productDetail', 'uses' => 'ProductController@detail']);
+Route::get('brands', ['as' => 'brands', 'uses' => 'BrandController@index']);
+Route::get('brand/{id}', ['as' => 'brand', 'uses' => 'BrandController@products']);
+
+Route::get('product/{id}', ['as' => 'product', 'uses' => 'ProductController@detail']);
 Route::get('posts', ['as' => 'posts', 'uses' => 'PostController@index']);
 
 

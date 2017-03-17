@@ -2,21 +2,29 @@
 
 namespace App\Http\Controllers;
 
+use App\CategoryProduct;
+use App\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function index()
+
+
+    public function detail(Request $request, $id)
     {
+        $isApi = $request->query('api');
+        $product = Product::find($id);
 
-        return view('product.index');
-    }
+        if(!$product){
+            abort(404);
+        }
 
-    public function category(){
-        return view('product.category');
-    }
+        if($isApi){
+            return response()->json($product);
+        }
 
-    public function detail(){
-        return view('product.detail');
+        $category = CategoryProduct::find($product->id);
+
+        return view('product.detail', compact('product', 'category'));
     }
 }

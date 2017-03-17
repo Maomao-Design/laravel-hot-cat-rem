@@ -18,9 +18,9 @@
             <div class="range range-md-bottom range-sm-center">
 
                 <div class="cell-sm-11 cell-md-6 offset-top-40 offset-sm-top-60 offset-md-top-0">
-                    <a href="">
+                    <a href="" title="{{$post->title}}">
                         <div class="image-group wow fadeInLeftSmallSmall">
-                            <img src="/jcb/imgs/new180.gif" alt="" width="689" height="469">
+                            <img src="{{asset('storage/'.$post->image)  }}" alt="{{$post->title}}" title="{{$post->title}}" >
                         </div>
                     </a>
                 </div>

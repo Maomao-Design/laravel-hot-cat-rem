@@ -23,13 +23,13 @@
                                 <button data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar-search-wrap" class="color-blue rd-navbar-search-toggle"></button>
                             </div>
                             <ul class="rd-navbar-nav">
-                                <li class=""><a href="/">Home</a>
+                                <li class=""><a href="{{ URL::route('home') }}">Home</a>
                                 </li>
                                 <li>
-                                    <a href="/page/about">About Us</a>
+                                    <a href="{{ URL::route('page','about') }}">About Us</a>
 
                                 </li>
-                                <li><a href="#">Products</a>
+                                <li><a href="{{ URL::route('brands') }}">Products</a>
                                     <ul class="rd-navbar-megamenu">
 
                                         <li>
@@ -61,14 +61,14 @@
                                     </ul>
                                 </li>
 
-                                <li><a href="/down">Downloads </a>
+                                <li><a href="{{ URL::route('down') }}">Downloads </a>
 
                                 </li>
-                                <li><a href="/posts">News & Events</a>
+                                <li><a href="{{ URL::route('posts') }}">News & Events</a>
 
                                 </li>
                                 <li>
-                                    <a href="/page/contact">Contact</a>
+                                    <a href="{{ URL::route('page','contact') }}">Contact</a>
                                 </li>
                             </ul>
                         </div>

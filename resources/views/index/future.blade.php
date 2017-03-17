@@ -24,7 +24,7 @@
 
 <section class="section-lg-bottom-145">
     <div class="shell">
-        <div class="range range-md-middle range-sm-center">
+        <div class="range  range-sm-center">
             <div data-wow-duration="2s" data-wow-offset="200" class="cell-sm-10 cell-md-5 wow fadeInLeft">
 
 
