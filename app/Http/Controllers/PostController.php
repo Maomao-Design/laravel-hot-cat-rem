@@ -22,9 +22,10 @@ class PostController extends Controller
 
         return view('post.index',compact('posts'));
     }
-    public function detail(Request $request, $slug){
+    public function detail(Request $request, $id){
 
-        $post = Post::where('slug', $slug)->first();
+//        $post = Post::where('slug', $slug)->first();
+        $post = Post::find($id);
 
         $isApi = $request->query('api');
 
@@ -33,9 +34,24 @@ class PostController extends Controller
         }
 
         if(empty($post)) {
-            dd('page is empty');
+            abort(404);
             return;
         }
-        return view('post.detail',compact('post'));
+
+        $next = Post::find($this->getNextId($post->id));
+        $prev = Post::find($this->getPrevId($post->id));
+
+
+        return view('post.detail',compact('post','next', 'prev'));
+    }
+
+    protected function getPrevId($id)
+    {
+        return Post::where('id', '<', $id)->max('id');
+    }
+
+    protected function getNextId($id)
+    {
+        return Post::where('id', '>', $id)->min('id');
     }
 }

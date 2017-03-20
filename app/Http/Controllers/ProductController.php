@@ -25,6 +25,19 @@ class ProductController extends Controller
 
         $category = CategoryProduct::find($product->id);
 
-        return view('product.detail', compact('product', 'category'));
+        $next = Product::find($this->getNextId($product->id));
+        $prev = Product::find($this->getPrevId($product->id));
+
+        return view('product.detail', compact('product', 'category', 'next', 'prev'));
+    }
+
+    protected function getPrevId($id)
+    {
+        return Product::where('id', '<', $id)->max('id');
+    }
+
+    protected function getNextId($id)
+    {
+        return Product::where('id', '>', $id)->min('id');
     }
 }

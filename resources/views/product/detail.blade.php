@@ -37,22 +37,7 @@
     <!--Paging-->
 
     <section  class="section-15 product-paging">
-        <div class="shell">
-            <div class="range range-md-bottom range-sm-center">
-                <div  class="cell-sm-11 cell-md-6" >
-                    <a href="">
-                        <i class="fa fa-long-arrow-left"></i>
-                        YJLV22
-                    </a>
-                </div>
-                <div class="cell-sm-11 cell-md-6  offset-md-top-0 text-right">
-                    <a href="">
-                        YJLV22
-                        <i class="fa fa-long-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+        @include('layouts.paging')
     </section>
 
     <!--Paging end-->

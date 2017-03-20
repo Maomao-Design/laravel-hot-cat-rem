@@ -1,13 +1,20 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-404 page not <a href="/">返回首页</a>
-</body>
-</html>
+@extends('layouts.app')
+
+@section('title')
+    404 page not
+@endsection
+
+@section('content')
+
+    <section style="height: 100px;"></section>
+
+    <section class="text-center section-75 product-class-title">
+        404 page not
+        <p style="font-size: 12px;padding-top: 10px;">
+            <a href="/">返回首页</a>
+        </p>
+    </section>
+
+
+
+@endsection

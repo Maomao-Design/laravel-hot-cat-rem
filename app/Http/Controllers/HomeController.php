@@ -2,17 +2,29 @@
 
 namespace App\Http\Controllers;
 
+use App\Brand;
+use App\CategoryBrand;
+use App\Product;
 use Illuminate\Http\Request;
 use App\Advertising;
+use TCG\Voyager\Models\Post;
 
 class HomeController extends Controller
 {   
     
-    public function index()
+    public function index(Request $request)
     {
         
         $advertising = Advertising::where('category_id', 1)->get();
 
-        return view('home',['advertising' => $advertising]);
+//        $products =Product::orderBy('updated_at','desc')-> paginate(20);
+
+        $brands = Brand::all();
+
+        $posts = Post::orderBy('updated_at','desc')->take(5)->get();
+
+        $categories = CategoryBrand::all();
+
+        return view('home',compact('advertising', 'categories', 'brands', 'posts'));
     }
 }

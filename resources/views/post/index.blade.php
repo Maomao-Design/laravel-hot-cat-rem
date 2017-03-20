@@ -18,7 +18,7 @@
             <div class="range range-md-bottom range-sm-center">
 
                 <div class="cell-sm-11 cell-md-6 offset-top-40 offset-sm-top-60 offset-md-top-0">
-                    <a href="" title="{{$post->title}}">
+                    <a href="{{ URL::route('post',$post->id) }}" title="{{$post->title}}">
                         <div class="image-group wow fadeInLeftSmallSmall">
                             <img src="{{asset('storage/'.$post->image)  }}" alt="{{$post->title}}" title="{{$post->title}}" >
                         </div>
@@ -37,9 +37,9 @@
 
         </div>
         <div class="text-center section-50">
-            <div class="btn btn-primary btn-rect ajax-more-btn ajax-loading">
-                See More <i class="fa fa-spinner fa-spin"></i>
-            </div>
+            {{--<div class="btn btn-primary btn-rect ajax-more-btn ajax-loading">--}}
+                {{--See More <i class="fa fa-spinner fa-spin"></i>--}}
+            {{--</div>--}}
         </div>
     </div>
 </section>

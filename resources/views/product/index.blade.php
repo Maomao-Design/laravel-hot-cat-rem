@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    產品首頁
+    Products
 @endsection
 
 @section('content')

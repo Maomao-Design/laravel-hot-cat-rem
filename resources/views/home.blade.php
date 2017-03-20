@@ -1,6 +1,6 @@
 @extends('layouts.app') 
 
-@section('title', 'Index Title') 
+@section('title', ' ')
 
 @section('content')
 
@@ -15,7 +15,9 @@
                 <div class="box-container-small text-right">
 
                     <p class="offset-top-22 text-secondary font-n24">
-                        Choose from our wide range of predefined Homepage layouts and demos to create your Own Amazing Experience.</p>
+                        From new oil and gas projects to existing
+                        operations, we can help you achieve Top
+                        Quartile performance.</p>
                     <a href="" class="btn btn-xl btn-blue-ma offset-top-35 offset-md-top-60">SEE MORE  &nbsp;></a>
                 </div>
             </div>

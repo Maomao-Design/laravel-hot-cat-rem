@@ -20,6 +20,8 @@ class PageController extends Controller
 
         if($slug == 'about'){
             $view = 'page.about';
+        }elseif ($slug == 'contact'){
+            $view = 'page.contact';
         }
 
         return view($view, compact('page'));

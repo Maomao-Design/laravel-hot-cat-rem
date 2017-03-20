@@ -13,13 +13,15 @@
                                 <p data-caption-animate="fadeInUp" data-caption-delay="100" class="text-bigger slider-text">
                                     {{ $ad->description}}
                                 </p>
+                                @if($ad->link)
                                 <div class="group-xl-responsive offset-top-30 offset-sm-top-45">
                                     <a data-caption-animate="fadeInUp" data-caption-delay="250" 
-                                        href="{{ $ad->link}}" 
-                                        class="btn btn-xl btn-white-outline-variant-1">
+                                        href="{{ $ad->link}}"  >
+                                        {{--class="btn btn-xl btn-white-outline-variant-1">--}}
                                         SEE MORE  >
                                     </a>
                                 </div>
+                                @endif
                             </div>
                         </div>
                     </div>
