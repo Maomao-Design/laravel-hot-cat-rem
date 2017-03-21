@@ -177,6 +177,11 @@ return [
         Way\Generators\GeneratorsServiceProvider::class,
         Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
         /*
+         * Generating a sitemap
+         *
+         * */
+//        Spatie\Sitemap\SitemapServiceProvider::class,
+        /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,

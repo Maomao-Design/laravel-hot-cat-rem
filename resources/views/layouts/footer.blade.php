@@ -8,11 +8,11 @@
                         <div style="max-width: 340px;" class="row offset-top-22 offset-md-top-30">
                             <div class="col-xs-12">
                                 <ul class="list-marked-variant-2">
-                                    <li><a href="">About Us</a></li>
+                                    <li><a href="{{ URL::route('page','about') }}">About Us</a></li>
                                     <li><a href="">Leadership</a></li>
                                     <li><a href="">Careers</a></li>
-                                    <li><a href="">Contact</a></li>
-                                    <li><a href="">News & Events</a></li>
+                                    <li><a href="{{ URL::route('page','contact') }}">Contact</a></li>
+                                    <li><a href="{{ URL::route('posts') }}">News & Events</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -45,19 +45,19 @@
                                 <div>
                                     <ul class="list-inline list-inline-reset">
                                         <li>
-                                            <a href="#" class="icon icon-round icon-gray-dark-filled icon-xxs-smallest fa fa-envelope-o fa-fw"></a>
+                                            <a href="mailto: {{Voyager::setting('email')}}" target="_blank" class="icon icon-round icon-gray-dark-filled icon-xxs-smallest fa fa-envelope-o fa-fw"></a>
                                         </li>
                                         <li>
-                                            <a href="#" class="icon icon-round icon-gray-dark-filled icon-xxs-smallest fa fa-facebook"></a>
+                                            <a href="{{Voyager::setting('facebook')}}" target="_blank"  class="icon icon-round icon-gray-dark-filled icon-xxs-smallest fa fa-facebook"></a>
                                         </li>
                                         <li>
-                                            <a href="#" class="icon icon-round icon-gray-dark-filled icon-xxs-smallest fa fa-twitter"></a>
+                                            <a href="{{Voyager::setting('twitter')}}"  target="_blank" class="icon icon-round icon-gray-dark-filled icon-xxs-smallest fa fa-twitter"></a>
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div class="find-us text-center">
-                                    <a href="" class="fa fa-map-marker"></a>
+                                    <a href="{{ URL::route('page','contact') }}" class="fa fa-map-marker" title="Find Us"></a>
                                     <div>Find Us</div>
                                 </div>
                             </div>

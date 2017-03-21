@@ -1,5 +1,4 @@
-<link rel="icon" href="/jcb/imgs/favicon.png" type="image/x-icon">
-
+<link rel="icon" href="{{ asset('storage/'.Voyager::setting('icon')) }}" type="image/x-icon">
 <link rel="stylesheet" href="/jcb/css/app.css?v2017-0320">
 <link rel="stylesheet" href="/jcb/anla/product.css">
 <!--[if lt IE 10]>

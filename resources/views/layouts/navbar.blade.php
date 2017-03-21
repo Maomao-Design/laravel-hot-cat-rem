@@ -12,7 +12,7 @@
                     <div class="rd-navbar-nav-wrap">
                         <div class="rd-navbar-nav-inner">
                             <div class="rd-navbar-search">
-                                <form action="search-results.html" method="GET" data-search-live="rd-search-results-live" class="rd-search">
+                                <form action="{{ URL::route('products','') }}" method="GET" data-search-live="rd-search-results-live" class="rd-search">
                                     <div class="form-group">
                                         <label for="rd-search-form-input" class="form-label">Search...</label>
                                         <input id="rd-search-form-input" type="text" name="s" autocomplete="off" class="form-control">
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="rd-navbar-shop">
-                        <a href="" class="link-lang">
+                        <a href="#" class="link-lang">
                             中文
                         </a>
                     </div>

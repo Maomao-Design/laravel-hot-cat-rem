@@ -31,6 +31,22 @@ class ProductController extends Controller
         return view('product.detail', compact('product', 'category', 'next', 'prev'));
     }
 
+    public function search(Request $request){
+        $isApi = $request->query('api');
+        $title = $request->query('s');
+
+        $products = Product::where('title', 'like', '%'.$title.'%')->get();
+
+        if($isApi){
+            return response()->json($products);
+        }
+
+        $categories = CategoryProduct::all();
+
+        return view('product.search',compact('products','categories','title'));
+    }
+
+
     protected function getPrevId($id)
     {
         return Product::where('id', '<', $id)->max('id');

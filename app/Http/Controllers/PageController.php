@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Team;
 use Illuminate\Http\Request;
 use TCG\Voyager\Models\Page;
 
@@ -24,6 +25,8 @@ class PageController extends Controller
             $view = 'page.contact';
         }
 
-        return view($view, compact('page'));
+        $teams = Team::all();
+
+        return view($view, compact('page','teams'));
     }
 }

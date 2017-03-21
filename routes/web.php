@@ -27,8 +27,17 @@ Route::get('brands', ['as' => 'brands', 'uses' => 'BrandController@index']);
 Route::get('brand/{id}', ['as' => 'brand', 'uses' => 'BrandController@products']);
 
 Route::get('product/{id}', ['as' => 'product', 'uses' => 'ProductController@detail']);
+Route::get('products', ['as' => 'products', 'uses' => 'ProductController@search']);
+
 Route::get('posts', ['as' => 'posts', 'uses' => 'PostController@index']);
 Route::get('post/{id}', ['as' => 'post', 'uses' => 'PostController@detail']);
+
+// SiteMap
+//Route::get('sitemap', 'GeneratedController@siteMap');
+//Route::get('sitemap.xml', 'GeneratedController@siteMap');
+//
+//// RSS Feed
+//Route::get('feed.xml', 'GeneratedController@feed');
 
 
 Route::group(['prefix' => 'admin'], function () {

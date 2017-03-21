@@ -23,9 +23,7 @@
                         <h2>CONTACTS</h2>
                         <div>
                             &nbsp;————————
-                            <a href="" class="fa fa-envelope-o fa-fw"></a>
-                            <a href="" class="fa fa-facebook"></a>
-                            <a href="" class="fa fa-twitter"></a>
+                        @include('layouts.mail')
                         </div>
                     </div>
                     <div class="contact-desc-bottom">
@@ -77,20 +75,21 @@
         <div class="shell">
             <h3>GET IN TOUCH</h3>
             <div class="row">
+                @foreach($teams as $team)
                 <div class="col-md-6 section-30 contact-pep">
                     <div class="col-md-4">
-                        <img src="/jcb/images/blog-classic-2-113x113.png" alt="" width="113" height="113">
+                        <img src="{{ asset('storage/'.$team->avatar) }}" alt="" width="113" height="113">
                     </div>
                     <div class="col-md-8">
-                        <div class="name">NAME</div>
-                        <div class="desc">Positions of responsibility</div>
+                        <div class="name">{{ $team->name }}</div>
+                        <div class="desc">{{ $team->description }}</div>
                         <div>
-                            <i class="fa fa-phone"></i> +86 13681813339 <br />
-                            <i class="fa fa-envelope-o fa-fw"></i> zichuan.zhang@hotmail.com
+                            <i class="fa fa-phone"></i> {{ $team->phone }} <br />
+                            <i class="fa fa-envelope-o fa-fw"></i> {{ $team->email }}
                         </div>
                     </div>
                 </div>
-
+                @endforeach
             </div>
         </div>
     </section>
