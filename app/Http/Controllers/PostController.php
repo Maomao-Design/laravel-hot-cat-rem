@@ -12,7 +12,7 @@ class PostController extends Controller
         $paginate = $request->query('paginate');
         $isApi = $request->query('api');
         if(!$paginate){
-            $paginate = 10;
+            $paginate = 1;
         }
         $posts =Post::orderBy('updated_at','desc')-> paginate($paginate);
 
@@ -20,7 +20,15 @@ class PostController extends Controller
            return response()->json($posts);
         }
 
-        return view('post.index',compact('posts'));
+        $count = $posts->count();
+        $currentPage = $posts->currentPage();
+        $nextPageUrl = $posts->nextPageUrl();
+        $previousPageUrl = $posts->previousPageUrl();
+        $total = $posts->total();
+
+
+
+        return view('post.index',compact('posts','nextPageUrl'));
     }
     public function detail(Request $request, $id){
 

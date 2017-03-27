@@ -19,12 +19,15 @@ class HomeController extends Controller
 
 //        $products =Product::orderBy('updated_at','desc')-> paginate(20);
 
-        $brands = Brand::all();
+        $brands = Brand::orderBy('updated_at','desc')->take(3)->get();
 
         $posts = Post::orderBy('updated_at','desc')->take(5)->get();
 
+        $hot = Product::where('hot',1)->first();
+//        dd($hot);
+
         $categories = CategoryBrand::all();
 
-        return view('home',compact('advertising', 'categories', 'brands', 'posts'));
+        return view('home',compact('advertising', 'categories', 'brands', 'posts', 'hot'));
     }
 }

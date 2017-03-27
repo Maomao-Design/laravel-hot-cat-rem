@@ -41,7 +41,7 @@
 }
 
 .btn-blue-ma:hover{
-    opacity: .8;
+   opacity: .8;
 }
 
 .font-n16{
@@ -191,12 +191,12 @@
 
 
 /*@media (min-width: 768px){*/
-/*.index-blog .big-figure{*/
-/*max-height: 300px;*/
-/*}*/
-/*.index-blog .small-figure{*/
-/*max-height: 150px;*/
-/*}*/
+    /*.index-blog .big-figure{*/
+        /*max-height: 300px;*/
+    /*}*/
+    /*.index-blog .small-figure{*/
+        /*max-height: 150px;*/
+    /*}*/
 /*}*/
 
 .big-blog-list{

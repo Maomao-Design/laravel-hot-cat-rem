@@ -1,18 +1,17 @@
 <section id="section-start-journey" class="section-50 section-sm-90 section-lg-top-120">
     <div class="shell">
         <div class="range range-md-middle range-sm-center">
-            <div data-wow-duration="2s" data-wow-offset="200" class="cell-sm-10 cell-md-5 wow fadeInLeft">
+            <div data-wow-duration="2s" data-wow-offset="200" class="cell-sm-10 cell-md-8 wow fadeInLeft">
 
-                <p class="h3 offset-top-0">Bring your future with</p>
-                <p class="h3 offset-top-0">professional & confidence.</p>
+                <p class="font-size-h1 color-black offset-top-0">Bring your future with</p>
+                <p class="font-size-h1 color-black offset-top-0">professional & confidence.</p>
                 <p class="offset-top-40 text-secondary"></p>
 
             </div>
-            <div class="cell-sm-11 cell-md-7 offset-top-40 offset-sm-top-60 offset-md-top-0">
+            <div class="cell-sm-11 cell-md-4 offset-top-40 offset-sm-top-60 offset-md-top-0">
                 <div class="image-group" style="text-align: right">
                     <figure></figure>
-                    <!--<figure data-wow-duration=".9s" data-wow-delay=".4s" data-wow-offset="200" class="wow fadeInRightMedium"><img src="/jcb/imgs/index-2.png" alt="" width="508" height="341" />-->
-                    <!--</figure>-->
+
                     <figure data-wow-duration=".9s" data-wow-delay=".8s" data-wow-offset="100" class="wow fadeInRightSmall"><img src="/jcb/imgs/index-2.png" alt="" width="394" height="396" />
                     </figure>
                 </div>

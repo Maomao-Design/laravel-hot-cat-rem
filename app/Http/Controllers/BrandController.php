@@ -35,13 +35,24 @@ class BrandController extends Controller
             abort(404);
         }
 
-        $products = Product::where('brand_id', $id)->get();
+        $categories = Brand::find($id)->productCategories()->get();
 
-        if($isApi){
-            return response()->json($products);
+//        $products = array();
+        $arr = array();
+//        dd($categories);
+        foreach ($categories as $category){
+            array_push($arr, $category->id);
         }
 
-        $categories = CategoryProduct::all();
+        $products = Product::whereIn('category_id',$arr)->get();
+
+
+
+        if($isApi){
+            return response()->json(compact('products','categories'));
+        }
+
+
 
         return view('product.category',compact('products', 'categories', 'brand'));
 

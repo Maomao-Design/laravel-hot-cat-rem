@@ -13,7 +13,7 @@
 <!--list-->
 <section  class="section-50  section-lg-top-120  product-bg">
     <div class="shell">
-        <div class="list-news">
+        <div class="list-news" data-total="{{ $nextPageUrl }}">
             @foreach ($posts as $post)
             <div class="range range-md-bottom range-sm-center">
 
@@ -44,6 +44,11 @@
     </div>
 </section>
 <!--list end-->
+<script>
 
+    function postMore() {
+
+    }
+</script>
 
 @endsection

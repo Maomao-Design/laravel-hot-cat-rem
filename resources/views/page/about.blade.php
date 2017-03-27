@@ -100,7 +100,7 @@
                             For more information on our products and services, or to request a quote, please contact us today
                         </p>
                         <div class="about-more text-right">
-                            <a href="">GET IN TOUCH  <span class="fa fa-arrow-right"></span></a>
+                            <a href="{{URL::route('page','contact')}}#get-in-touch">GET IN TOUCH  <span class="fa fa-arrow-right"></span></a>
                         </div>
                     </div>
 

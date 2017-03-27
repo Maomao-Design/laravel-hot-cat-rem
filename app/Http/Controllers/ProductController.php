@@ -23,6 +23,15 @@ class ProductController extends Controller
             return response()->json($product);
         }
 
+
+
+        $product->images = json_decode($product->images);
+
+//        if($product->images == null){
+//            $product->images = array();
+//        }
+
+
         $category = CategoryProduct::find($product->id);
 
         $next = Product::find($this->getNextId($product->id));

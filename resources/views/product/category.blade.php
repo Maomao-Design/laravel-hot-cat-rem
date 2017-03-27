@@ -39,17 +39,27 @@
                     <div class="row">
                         <div data-isotope-layout="fitRows" data-isotope-group="gallery" data-photo-swipe-gallery="gallery" class="isotope isotope-gutter-default isotope--loaded" style="position: relative; height: 649px;">
                             @foreach($products as $product)
-                            <div data-filter="Category 1" class="col-xs-12 col-sm-6 col-md-6 isotope-item text-center" >
+                            <div data-filter="{{ $product->category_id }}" class="col-xs-12 col-sm-6 col-md-6 isotope-item text-center" >
                                 <a href="{{ URL::route('product',$product->id) }}">
                                     <div class="thumbnail thumbnail-variant-3">
+                                        <?php
+                                        $images = json_decode($product->images)[0];
+                                        if(!$images){
+                                            $images = 'jcb/imgs/error.jpg';
+                                        }else{
+                                            $images = 'storage/'.$images;
+                                        }
+                                        ?>
                                         <figure>
-                                            <img src="/jcb/imgs/thumb.png" alt="" width="340" height="250">
+                                            <img src="{{ asset($images) }}" alt="" style="max-width: 100%;" >
                                         </figure>
                                     </div>
                                     <div class="product-class-rd">
                                         <div>Raled Voltage</div>
+
                                         <p>
-                                            8.7/10 KV
+
+                                            {{ $product->attributes}}
                                         </p>
                                     </div>
                                 </a>

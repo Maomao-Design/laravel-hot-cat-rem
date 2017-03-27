@@ -11,7 +11,7 @@
     <section class="text-center section-75 product-class-title">
         404 page not
         <p style="font-size: 12px;padding-top: 10px;">
-            <a href="/">返回首页</a>
+            <a href="/">Return to the home page</a>
         </p>
     </section>
 
