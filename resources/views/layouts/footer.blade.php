@@ -3,9 +3,9 @@
         <div class="range range-xs-center">
             <div class="cell-xs-10 cell-sm-11 cell-md-12">
                 <div class="range">
-                    <div class="cell-sm-6 cell-md-4">
+                    <div class="cell-sm-6 cell-md-4 text-sm-left text-center">
                         <h6 class="text-uppercase">OUR COMPANY</h6>
-                        <div style="max-width: 340px;" class="row offset-top-22 offset-md-top-30">
+                        <div  class="row offset-top-22 offset-md-top-30">
                             <div class="col-xs-12">
                                 <ul class="list-marked-variant-2">
                                     <li><a href="{{ URL::route('page','about') }}">About Us</a></li>
@@ -15,9 +15,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cell-sm-6 cell-md-4 offset-top-50 offset-sm-top-0">
+                    <div class="cell-sm-6 cell-md-4 text-sm-left text-center">
                         <h6 class="text-uppercase">OUR PRODUCTS</h6>
-                        <div style="max-width: 340px;" class="row offset-top-22 offset-md-top-30">
+                        <div  class="row offset-top-22 offset-md-top-30">
                             <div class="col-xs-12">
                                 <ul class="list-marked-variant-2">
                                     <li><a href="{{URL::route('brands')}}">Cables & Accessories</a></li>
@@ -26,11 +26,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cell-sm-6 cell-md-4 offset-top-50 offset-md-top-0">
+                    <div class="cell-sm-6 cell-md-4 offset-sm-top-30 text-sm-left text-center">
 
                         <h6 class="text-uppercase">Follow us</h6>
 
-                        <div style="max-width: 340px;" class="row offset-top-22 offset-md-top-30">
+                        <div  class="row offset-top-22 offset-md-top-30">
                             <div class="col-xs-12">
 
                                 <div>
