@@ -8,8 +8,22 @@
 
     <section style="background-image: url({{asset('/storage/'.$page->image)}})"
              class="section-165 section-sm-200 section-md-200 section-lg-bottom-265 bg-gray-dark page-title-wrap">
+        <div class="position-absolute shell-wrap">
+            <div class="shell position-relative">
+                <div class="page-about-title text-uppercase text-right font-adonide_bold">
+                    <span>about</span>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <section class="bg-whisper">
+        <div class="shell">
+            <div class="page-about-title text-uppercase text-right font-adonide_bold">
+                <span>us</span>
+            </div>
+        </div>
+    </section>
 
     <!--about-->
     <section class="section-50  section-lg-top-90 bg-whisper">
@@ -31,10 +45,10 @@
 
     <section class="section-50 section-sm-75 section-lg-100">
         <div class="shell">
-            <div class="about-other-wrap text-center">
-                <h5>
+            <div class="about-other-wrap">
+                <h4 class="text-center">
                     Solution
-                </h5>
+                </h4>
                 <div class="">
                     <p>
                         We not only provide the highest quality material,
@@ -49,10 +63,10 @@
                 </div>
             </div>
             <!--Products-->
-            <div class="about-other-wrap text-center">
-                <h5>
+            <div class="about-other-wrap">
+                <h4 class="text-center">
                     Products
-                </h5>
+                </h4>
                 <div class="">
                     <p>
                         we apply today’s updated technology to produce high-quality wire,
@@ -64,10 +78,10 @@
             </div>
             <!--Products end-->
             <!--Industry-->
-            <div class="about-other-wrap text-center">
-                <h5>
+            <div class="about-other-wrap">
+                <h4 class="text-center">
                     Industry
-                </h5>
+                </h4>
                 <div class="">
                     <p>
                         Tiancai is located in tianchang industry zone, with a total area of ​​XXXXX square meters, the registered capital of XXX million yuan,

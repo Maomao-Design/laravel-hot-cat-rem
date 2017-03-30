@@ -45,7 +45,7 @@
     </div>
     <div class="text-center section-50">
         <a href="{{URL::route('brands')}}">
-            <div class="btn btn-info btn-rect ajax-more-btn">
+            <div class="btn btn-md btn-blue-ma ajax-more-btn">
             See More <i class="fa fa-spinner fa-spin"></i>
             </div>
         </a>
