@@ -4,7 +4,7 @@
             <div class="cell-xs-10 cell-sm-11 cell-md-12">
                 <div class="range">
                     <div class="cell-sm-6 cell-md-4 text-sm-left text-center">
-                        <h6 class="text-uppercase">OUR COMPANY</h6>
+                        <h6 class="text-uppercase font-adonide_bold">OUR COMPANY</h6>
                         <div  class="row offset-top-22 offset-md-top-30">
                             <div class="col-xs-12">
                                 <ul class="list-marked-variant-2">
@@ -16,7 +16,7 @@
                         </div>
                     </div>
                     <div class="cell-sm-6 cell-md-4 text-sm-left text-center">
-                        <h6 class="text-uppercase">OUR PRODUCTS</h6>
+                        <h6 class="text-uppercase font-adonide_bold">OUR PRODUCTS</h6>
                         <div  class="row offset-top-22 offset-md-top-30">
                             <div class="col-xs-12">
                                 <ul class="list-marked-variant-2">
@@ -26,9 +26,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cell-sm-6 cell-md-4 offset-sm-top-30 text-sm-left text-center">
+                    <div class="cell-sm-6 cell-md-4  text-sm-left text-center">
 
-                        <h6 class="text-uppercase">Follow us</h6>
+                        <h6 class="text-uppercase font-adonide_bold">Follow us</h6>
 
                         <div  class="row offset-top-22 offset-md-top-30">
                             <div class="col-xs-12">

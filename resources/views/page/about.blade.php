@@ -36,7 +36,7 @@
 
             </blockquote>
 
-            <div class="about-description">
+            <div class="about-description text-justify">
                 {!! $page->body !!}
 
             </div>
@@ -49,7 +49,7 @@
                 <h4 class="text-center">
                     Solution
                 </h4>
-                <div class="">
+                <div class="text-justify">
                     <p>
                         We not only provide the highest quality material,
                         but at a reasonable cost to our oversea customers on time.
@@ -67,7 +67,7 @@
                 <h4 class="text-center">
                     Products
                 </h4>
-                <div class="">
+                <div class="text-justify">
                     <p>
                         we apply today’s updated technology to produce high-quality wire,
                         cable products, and patented cable tray etc. To assure that our products are made from the best material,
@@ -82,7 +82,7 @@
                 <h4 class="text-center">
                     Industry
                 </h4>
-                <div class="">
+                <div class="text-justify">
                     <p>
                         Tiancai is located in tianchang industry zone, with a total area of ​​XXXXX square meters, the registered capital of XXX million yuan,
                         the total assets of XXX million, with the domestic first-class production equipment and improve the detection system.
@@ -109,7 +109,7 @@
                         <h6 class="about-service-title">
                             SERVICE
                         </h6>
-                        <p>
+                        <p class="text-justify">
                             We conform to the standards to ensure quality, and we conform to our customer’s needs to ensure satisfaction.
                             For more information on our products and services, or to request a quote, please contact us today
                         </p>

@@ -3,8 +3,8 @@
         <div class="range range-md-middle range-sm-center">
             <div data-wow-duration="2s" data-wow-offset="200" class="cell-sm-10 cell-md-8 wow fadeInLeft">
 
-                <p class="font-size-h1 color-black font-adonide_bold offset-top-0">Bring your future with</p>
-                <p class="font-size-h1 color-black font-adonide_bold offset-top-0">professional & confidence.</p>
+                <p class="font-size-h1 color-black font-adonide offset-top-0">Bring your future with</p>
+                <p class="font-size-h1 color-black font-adonide offset-top-0">professional & confidence.</p>
                 <p class="offset-top-40 text-secondary"></p>
 
             </div>
@@ -22,7 +22,7 @@
 </section>
 
 <section class="section-lg-bottom-145">
-    <div class="shell">
+    <div class="shell text-justify">
         <div class="range  range-sm-center">
             <div data-wow-duration="2s" data-wow-offset="200" class="cell-sm-10 cell-md-5 wow fadeInLeft">
 

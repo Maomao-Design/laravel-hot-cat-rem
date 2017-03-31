@@ -11,10 +11,10 @@
                         <figure class="big-figure">
                             <img src="{{ asset('storage/'.$post->image)}}" alt="{{ $post->title }}">
                         </figure>
-                        <div class="big-blog-bg">
+                        <div class="big-blog-bg text-center text-md-left">
 
                             <a href="{{ URL::route('post', $post->id) }}" title="{{ $post->title }}">
-                                <h5 class="index-blog-model text-center">
+                                <h5 class="index-blog-model text-center font-size-h1">
                                     News & Events
                                 </h5>
                                 <h6 class="index-blog-title">
@@ -32,7 +32,7 @@
                 <div class="row">
                     @foreach($posts as $post)
                         @if (!$loop->first)
-                            <div class="col-lg-6 col-md-6 col-md-pd-0 big-blog-list" >
+                            <div class="col-lg-6 col-md-6 col-md-pd-0 big-blog-list text-center text-md-left" >
                                 <figure class="small-figure">
                                     <img src="{{ asset('storage/'.$post->image)}}" alt="{{ $post->title }}">
                                 </figure>
