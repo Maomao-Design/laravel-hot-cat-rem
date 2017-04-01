@@ -1,23 +1,33 @@
+
+
 <div class="shell">
     <div class="range range-md-bottom range-sm-center">
-        <div  class="cell-sm-11 cell-md-6" >
+
+        <div  class="cell-xs-6 cell-mm-6 flex align-items-center" >
             @if ($prev)
-                <a href="{{ URL::route('post',$prev->id) }}">
-                    <i class="fa fa-long-arrow-left"></i>
+                <a href="{{ URL::route('post',$prev->id) }}" class="flex">
+                    <span class="flex align-items-center">
+                        <i class="fa fa-long-arrow-left"></i>
+                        &nbsp;
+                    </span>
+                    <span class="word-break-all">
                     {{ $prev->title }}
+                    </span>
                 </a>
-            @else
-                No more
             @endif
         </div>
-        <div class="cell-sm-11 cell-md-6  offset-md-top-0 text-right">
+
+
+        <div class="cell-xs-6 cell-mm-6 flex align-items-center">
             @if ($next)
-                <a href="{{ URL::route('post',$next->id)  }}">
-                    {{ $next->title }}
-                    <i class="fa fa-long-arrow-right"></i>
+                <a href="{{ URL::route('post',$next->id)  }}" class="flex">
+                    <span class="word-break-all">
+                        {{ $next->title }}
+                    </span>
+                    <span class="flex align-items-center">
+                        &nbsp;<i class="fa fa-long-arrow-right"></i>
+                    </span>
                 </a>
-            @else
-                No more
             @endif
         </div>
     </div>

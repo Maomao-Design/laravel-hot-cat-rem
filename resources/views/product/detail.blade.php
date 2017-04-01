@@ -6,9 +6,9 @@
 
 @section('content')
 
-    <section style="height: 100px;"></section>
+    <section class="section-md-50"></section>
 
-    <section class="text-center section-75 product-details-title">
+    <section class="text-center section-15 section-md-75 product-details-title">
         <h3>{{ $category->name }}</h3>
         <p>
             {{ $product->title }}
@@ -21,7 +21,7 @@
     <section class="product-bg">
         <div class="shell">
 
-            <article class="post-classic section-bottom-15">
+            <article class="post-classic section-top-30">
                 <div class="post-media">
                     <div data-items="1" data-stage-padding="0" data-loop="true" data-margin="15" data-mouse-drag="true" data-dots="true" data-animation-in="fadeIn" data-animation-out="fadeOut" class="owl-carousel owl-style-minimal">
                         @if($product->images != null)
@@ -41,7 +41,7 @@
     </section>
     <!--images end-->
     <!--body-->
-    <section class="product-detail-body section-75">
+    <section class="product-detail-body section-15 section-bottom-35 product-bg">
         <div class="shell">
             <div>
                 {!! $product->body !!}

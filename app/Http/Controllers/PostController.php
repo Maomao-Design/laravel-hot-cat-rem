@@ -12,7 +12,7 @@ class PostController extends Controller
         $paginate = $request->query('paginate');
         $isApi = $request->query('api');
         if(!$paginate){
-            $paginate = 1;
+            $paginate = 40;
         }
         $posts =Post::orderBy('updated_at','desc')-> paginate($paginate);
 
