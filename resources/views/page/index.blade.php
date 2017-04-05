@@ -7,7 +7,7 @@
 @section('content')
 
 <section style="background-image: url({{asset('/storage/'.$page->image)}})"
-         class="section-165 section-sm-200 section-md-200 section-lg-bottom-265 bg-gray-dark page-title-wrap">
+         class="section-165 section-sm-200 section-md-200 section-lg-bottom-265  page-title-wrap">
 </section>
 
 

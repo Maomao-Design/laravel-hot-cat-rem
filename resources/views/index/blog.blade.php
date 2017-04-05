@@ -14,10 +14,10 @@
                         <div class="big-blog-bg text-center text-md-left">
 
                             <a href="{{ URL::route('post', $post->id) }}" title="{{ $post->title }}">
-                                <h5 class="index-blog-model text-center font-size-h1">
+                                <h3 class="text-center color-nfff">
                                     News & Events
-                                </h5>
-                                <h6 class="index-blog-title">
+                                </h3>
+                                <h6 class="index-blog-title text-overflow">
                                     {{ $post->title }}
                                 </h6>
                                 <div class="index-blog-more">
@@ -38,7 +38,7 @@
                                 </figure>
                                 <div class="big-blog-bg">
                                     <a href="{{ URL::route('post', $post->id) }}" title="{{ $post->title }}">
-                                        <h6 class="index-blog-title">
+                                        <h6 class="index-blog-title text-overflow">
                                             {{ $post->title }}
                                         </h6>
                                         <div class="index-blog-more">

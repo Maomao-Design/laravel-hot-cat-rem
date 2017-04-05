@@ -7,7 +7,7 @@
 @section('content')
 
     <section style="background-image: url({{asset('/storage/'.$page->image)}})"
-             class="section-165 section-sm-200 section-md-200 section-lg-bottom-265 bg-gray-dark page-title-wrap">
+             class="section-165 section-sm-200 section-md-200 section-lg-bottom-265 page-title-wrap">
         <div class="position-absolute shell-wrap">
             <div class="shell position-relative">
                 <div class="page-about-title text-uppercase text-right font-adonide_bold">
@@ -30,7 +30,7 @@
         <div class="shell">
 
             <blockquote class="about-blockquote">
-                <p>
+                <p style="max-width: 380px">
                     {!! $page->excerpt !!}
                 </p>
 
@@ -97,31 +97,7 @@
     <!--about other end-->
 
     <!--about footer-->
-    <section class="about-footer">
-        <div class="shell">
-            <div class="range range-md-justify offset-top-30 offset-sm-top-40">
-                <div class="cell-sm-6 no-cell-pl">
-                    <figure><img src={{asset('jcb/images/typography-3-570x386.jpg')}} alt="" width="570" height="386">
-                    </figure>
-                </div>
-                <div class="cell-sm-6 offset-top-30 offset-sm-top-0 no-cell-pl about-footer-content">
-                    <div class="text-gray-darker">
-                        <h6 class="about-service-title">
-                            SERVICE
-                        </h6>
-                        <p class="text-justify">
-                            We conform to the standards to ensure quality, and we conform to our customer’s needs to ensure satisfaction.
-                            For more information on our products and services, or to request a quote, please contact us today
-                        </p>
-                        <div class="about-more text-right">
-                            <a href="{{URL::route('page','contact')}}#get-in-touch">GET IN TOUCH  <span class="fa fa-arrow-right"></span></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('layouts.service')
     <!--about footer end-->
 
 @endsection

@@ -21,12 +21,10 @@
 
 </section>
 
-<section class="section-lg-bottom-145">
+<section class="section-bottom-60">
     <div class="shell text-justify">
         <div class="range  range-sm-center">
-            <div data-wow-duration="2s" data-wow-offset="200" class="cell-sm-10 cell-md-5 wow fadeInLeft">
-
-
+            <div data-wow-duration="2s" data-wow-offset="200" class="cell-sm-12 offset-top-40  cell-md-5 wow fadeInLeft">
                 <p class="text-secondary">
                     Cables of the F-LINK-L series are specifically designed for building LonWorks based networks. LonWorks is the name of the
                     intelligent distributed control networking technology platform developed by Echelon. LonWorks networks
@@ -35,8 +33,8 @@
                 </p>
 
             </div>
-            <div class="cell-sm-11 cell-md-7 offset-top-40 offset-sm-top-60 offset-md-top-0">
-                <div data-wow-duration="2s" data-wow-offset="200" class="cell-sm-10 cell-md-5 wow fadeInRight">
+            <div class="cell-sm-12 cell-md-7 offset-top-40">
+                <div data-wow-duration="2s" data-wow-offset="200" class="wow fadeInRight">
 
                     <p class="text-secondary">
                         Brightpower’s KVVP series provides cables which are manufactured specifically to comply with the characteristics required for LonWorks based networks.

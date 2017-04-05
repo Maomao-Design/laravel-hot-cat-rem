@@ -30,25 +30,26 @@
 
                                 </li>
                                 <li><a href="{{ URL::route('brands') }}">Products</a>
-                                    {{--<ul class="rd-navbar-megamenu">--}}
-                                    <ul class="rd-navbar-dropdown">
-
+                                    <ul class="rd-navbar-megamenu">
+                                    {{--<ul class="rd-navbar-dropdown">--}}
                                         {{--<li>--}}
                                             {{--<a href=""></a>--}}
                                         {{--</li>--}}
-                                        {{--<li>--}}
-                                            {{--<div class="nav-dropdown-box">--}}
-                                                {{--<h6 class="rd-megamenu-header">Cables & Accessories </h6>--}}
-                                                {{--<ul class="rd-navbar-list">--}}
-                                                    {{--<li><a href="">CABLE</a></li>--}}
-                                                    {{--<li><a href="">6KTV-1008dg</a></li>--}}
-                                                    {{--<li><a href="">14KV-98cs</a></li>--}}
-                                                    {{--<li><a href="">76op-xvd8</a></li>--}}
-                                                    {{--<li><a href="">zvfv346-09</a></li>--}}
-                                                    {{--<li><a href="">687fbf-io</a></li>--}}
-                                                {{--</ul>--}}
-                                            {{--</div>--}}
-                                        {{--</li>--}}
+                                        @foreach($categoryBrands as $categoryBrand)
+                                        <li>
+                                            <div class="nav-dropdown-box">
+                                                <h5 class="rd-megamenu-header">{{ $categoryBrand -> name }} </h5>
+                                                <ul class="rd-navbar-list">
+                                                    <?php
+                                                     $brands = \App\Brand::orderBy('updated_at','desc')->Where("category_id",$categoryBrand->id)->take(5)->get();
+                                                    ?>
+                                                    @foreach($brands as $brand)
+                                                    <li><a href="{{ URL::route('brand', $brand->id ) }}">{{ $brand->title }}</a></li>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        @endforeach
                                         {{--<li>--}}
                                             {{--<div class="nav-dropdown-box">--}}
                                                 {{--<h6 class="rd-megamenu-header">Industrial Automation Device ></h6>--}}

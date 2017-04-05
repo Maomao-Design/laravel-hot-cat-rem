@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+
+use App\CategoryBrand;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 
@@ -17,7 +19,10 @@ class AppServiceProvider extends ServiceProvider
         //
         Schema::defaultStringLength(191);
 
-        view()->share('share','share');
+
+        $categoryBrands = CategoryBrand::all();
+
+        view()->share('categoryBrands',$categoryBrands);
     }
 
     /**

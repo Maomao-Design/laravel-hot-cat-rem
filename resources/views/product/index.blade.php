@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <section style="height: 100px;"></section>
+    <section class="section-md-50"></section>
 
     <!--search-->
     <!--search end-->
@@ -38,7 +38,7 @@
 
                     <ul class="isotope-filters-responsive">
                         <li>
-                            <p>Choose your category:</p>
+                            {{--<p>Choose your category:</p>--}}
                         </li>
                         <li class="block-top-level">
                             <button data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" class="isotope-filters-toggle btn btn-sm btn-default">Filter<span class="caret"></span></button>
@@ -54,7 +54,7 @@
                     </ul>
                 </div>
                 <div class="cell-xs-12 offset-top-40">
-                    <div class="row">
+                    <div class="row text-center">
                         <div data-isotope-layout="fitRows" data-isotope-group="gallery" data-photo-swipe-gallery="gallery" class="isotope isotope-gutter-default isotope--loaded" style="position: relative; height: 649px;">
                             @foreach ($brands as $brand)
                             <div data-filter="{{ $brand->category_id }}" class="col-xs-12 col-sm-6 col-md-4 isotope-item" >
