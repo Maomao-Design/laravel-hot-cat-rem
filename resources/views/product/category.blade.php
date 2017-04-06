@@ -35,11 +35,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="cell-xs-12 offset-top-120">
+                <div class="cell-xs-12 offset-sm-top-40 offset-md-top-120">
                     <div class="row text-center">
-                        <div data-isotope-layout="fitRows" data-isotope-group="gallery" data-photo-swipe-gallery="gallery" class="isotope isotope-gutter-default isotope--loaded" style="position: relative; height: 649px;">
+                        <div data-isotope-layout="fitRows" data-isotope-group="gallery" data-photo-swipe-gallery="gallery" class="isotope isotope-gutter-default isotope--loaded" style="position: relative;">
                             @foreach($products as $product)
-                            <div data-filter="{{ $product->category_id }}" class="col-xs-12 col-sm-6 col-md-6 isotope-item text-center" >
+                            <div data-filter="{{ $product->category_id }}" class="col-xs-12 col-sm-6 col-md-6 isotope-item text-center" style="padding-bottom: 20px;" >
                                 <a href="{{ URL::route('product',$product->id) }}">
                                     <div class="thumbnail thumbnail-variant-3">
                                         <?php
