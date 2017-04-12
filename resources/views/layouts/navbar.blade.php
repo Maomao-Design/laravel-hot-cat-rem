@@ -41,7 +41,7 @@
                                                 <h5 class="rd-megamenu-header">{{ $categoryBrand -> name }} </h5>
                                                 <ul class="rd-navbar-list">
                                                     <?php
-                                                     $brands = \App\Brand::orderBy('updated_at','desc')->Where("category_id",$categoryBrand->id)->take(5)->get();
+                                                     $brands = \App\Brand::orderBy('updated_at','desc')->Where("category_id",$categoryBrand->id)->get();
                                                     ?>
                                                     @foreach($brands as $brand)
                                                     <li><a href="{{ URL::route('brand', $brand->id ) }}">{{ $brand->title }}</a></li>
