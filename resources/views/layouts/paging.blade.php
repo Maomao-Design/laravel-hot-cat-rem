@@ -6,7 +6,7 @@
 
         <div  class="cell-xs-6 cell-mm-6 flex align-items-center" >
             @if ($prev)
-                <a href="{{ URL::route('post',$prev->id) }}" class="flex">
+                <a href="{{ $prev->id }}" class="flex">
                     <span class="flex align-items-center">
                         <i class="fa fa-long-arrow-left"></i>
                         &nbsp;&nbsp;
@@ -21,7 +21,7 @@
 
         <div class="cell-xs-6 cell-mm-6 flex align-items-center">
             @if ($next)
-                <a href="{{ URL::route('post',$next->id)  }}" class="flex flex-n2">
+                <a href="{{$next->id}}" class="flex flex-n2">
                     <span class="word-break-all flex-n2 text-right">
                         {{ $next->title }}
                     </span>
