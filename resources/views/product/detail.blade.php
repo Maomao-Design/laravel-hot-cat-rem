@@ -25,12 +25,14 @@
             <article class="post-classic section-top-30">
                 <div class="post-media">
                     <div data-items="1" data-stage-padding="0" data-loop="true" data-margin="15" data-mouse-drag="true" data-dots="true" data-animation-in="fadeIn" data-animation-out="fadeOut" class="owl-carousel owl-style-minimal">
+                        {{--{{ dd(isset($product->images)) }}--}}
                         @if(isset($product->images))
                         @foreach($product->images as $image)
                         <div class="item">
                             <figure><img src="{{ asset('storage/'.$image)}}" alt="" width="970" height="546"/>
                             </figure>
                         </div>
+
                         @endforeach
                         @endif
                     </div>

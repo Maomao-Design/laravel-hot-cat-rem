@@ -18,7 +18,7 @@
     @yield('content')
     @include('layouts.footer')
 </div>
-<script src="{{ asset('jcb/js/app.js?V2017-1') }}"></script>
+<script src="{{ asset('jcb/js/app.js?V2017-11') }}"></script>
 
 @yield('footer')
 </body>
