@@ -19,7 +19,7 @@ class HomeController extends Controller
 
 //        $products =Product::orderBy('updated_at','desc')-> paginate(20);
 
-        $brands = Brand::orderBy('updated_at','desc')->take(3)->get();
+        $brands = Brand::orderBy('updated_at','desc')->take(6)->get();
 
         $posts = Post::orderBy('updated_at','desc')->take(5)->get();
 
