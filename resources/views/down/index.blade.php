@@ -21,7 +21,7 @@
                 <div class="down-list row range">
                     <div class="down-bg col-md-8">
                         <figure>
-                            <img src="{{asset('jcb/imgs/down-b.png')}}" alt="" />
+                            <img src="{{asset('jcb/imgs/pdf.jpg')}}" alt="" />
                         </figure>
                     </div>
                     <div class="col-md-4 down-btn-wp section-top-30">
@@ -33,9 +33,9 @@
                 <div class="down-list row range">
                     <div class="down-bg col-md-8 position-relative">
                         <figure>
-                            <img src="{{asset('jcb/imgs/down-b.png')}}" alt="" />
+                            <img src="{{asset('jcb/imgs/pdf2.jpg')}}" alt="" />
                         </figure>
-                        <div class="down-pdf">PDF</div>
+                        {{--<div class="down-pdf">PDF</div>--}}
                     </div>
                     <div class="col-md-4 down-btn-wp section-top-30">
                         <a href="{{ URL::route('down.file') }}" class="down-btn">

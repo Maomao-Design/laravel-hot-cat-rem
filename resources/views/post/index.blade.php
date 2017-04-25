@@ -6,7 +6,7 @@
 
 @section('content')
 
-<section style="background-image: url({{asset('jcb/images/bg-image-1.jpg')}});" class="section-165 section-sm-200 section-md-200 section-lg-bottom-265  page-title-wrap">
+<section style="background-image: url({{asset('storage/'.Voyager::setting('news-banner'))}});" class="section-165 section-sm-200 section-md-200 section-lg-bottom-265  page-title-wrap">
 </section>
 
 
