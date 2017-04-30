@@ -1,5 +1,5 @@
 <section>
-    <div data-loop="false" data-autoplay="false" data-simulate-touch="true" class="swiper-container swiper-slider swiper-variant-1">
+    <div data-loop="false" data-autoplay="5000" data-simulate-touch="true" class="swiper-container swiper-slider swiper-variant-1">
         <div class="swiper-wrapper">
             @foreach ($advertising as $ad)
             <div data-slide-bg="/storage/{{ $ad->image }}" class="swiper-slide">

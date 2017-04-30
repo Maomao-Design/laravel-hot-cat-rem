@@ -1,12 +1,20 @@
 @extends('layouts.app')
 
 @section('title')
-    Post index
+    News & Events
 @endsection
 
 @section('content')
 
 <section style="background-image: url({{asset('storage/'.Voyager::setting('news-banner'))}});" class="section-165 section-sm-200 section-md-200 section-lg-bottom-265  page-title-wrap">
+    <div class="position-absolute shell-wrap">
+        <div class="shell position-relative" >
+            <div class="page-about-title text-uppercase text-right font-adonide_bold" style="font-size: 38px;">
+                <div>News & </div>
+                <div>Events </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
@@ -25,9 +33,13 @@
                     </a>
                 </div>
                 <div data-wow-duration="2s" data-wow-offset="200" class="cell-sm-10 cell-md-6 wow fadeInRight" >
-                    <h6 class="text">{{ $post->title }}</h6>
-                    <p class="offset-top-0">01/03 2017</p>
-                    <p class="offset-top-40 text-secondary text-justify">
+                    <h6 class="text font-adonide_regular" style="font-size: 36px;">
+                        {{ $post->title }}
+                    </h6>
+                    <p class="offset-top-0 font-adonide" style="line-height: 26px;font-size: 18px;">
+                        01/03 2017
+                    </p>
+                    <p class="offset-top-40 text-secondary text-justify font-adonide" style="line-height: 26px;font-size: 18px;">
                         {{ $post->excerpt }}
                     </p>
 
