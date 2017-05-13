@@ -1,5 +1,5 @@
 <link rel="icon" href="{{ asset('storage/'.Voyager::setting('icon')) }}" type="image/x-icon">
-<link rel="stylesheet" href="/jcb/css/loading.css">
+<link rel="stylesheet" href="/jcb/css/loading.css?v20170513">
 <link rel="stylesheet" href="/jcb/fonts/fonts.css">
 <link rel="stylesheet" href="/jcb/css/app.css?v2017-v16">
 <!--[if lt IE 10]>

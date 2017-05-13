@@ -77,21 +77,7 @@
                 </div>
             </div>
             <!--Products end-->
-            <!--Industry-->
-            <div class="about-other-wrap">
-                <h4 class="text-center">
-                    Industry
-                </h4>
-                <div class="text-justify">
-                    <p>
-                        Tiancai is located in tianchang industry zone, with a total area of ​​XXXXX square meters, the registered capital of XXX million yuan,
-                        the total assets of XXX million, with the domestic first-class production equipment and improve the detection system.
-                        We employ XXX headcount of the most experienced graduate engineers
-                        in the cable and wire field and have an in-house technical capability to design and  manufacture to quickly meet customer needs.
-                    </p>
-                </div>
-            </div>
-            <!--Industry end-->
+
         </div>
     </section>
     <!--about other end-->

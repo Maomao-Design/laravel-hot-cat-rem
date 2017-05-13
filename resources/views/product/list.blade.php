@@ -14,10 +14,8 @@
             </figure>
         </div>
         <div class="product-class-rd">
-            <div>Raled Voltage</div>
-
+            <div>RATED VOLTAGE</div>
             <p>
-
                 {{ $product->attributes}}
             </p>
         </div>

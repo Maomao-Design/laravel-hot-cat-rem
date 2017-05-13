@@ -34,16 +34,7 @@
                                 PHONE
                             </span>
                             <div>
-                                021 6219 0609
-                            </div>
-                        </div>
-                        <div class="th-box fa-fax">
-                            <i class="fa"></i>
-                            <span class="font-adonide_bold">
-                                FAX
-                            </span>
-                            <div>
-                                021 6219 0609
+                                {!! Voyager::block('contact_phone') !!}
                             </div>
                         </div>
                         <div class="th-box">
@@ -52,7 +43,7 @@
                                 EMAIL
                             </span>
                             <div>
-                                021 6219 0609
+                                {!! Voyager::block('contact_email') !!}
                             </div>
                         </div>
                         <div class="th-box">
@@ -61,8 +52,7 @@
                                 ADRESS
                             </span>
                             <div>
-                                CHINA, Shanghai <br/>
-                                317 XianXia Rd. Rm 2007
+                                {!! Voyager::block('contact_address') !!}
                             </div>
                         </div>
                     </div>
@@ -70,8 +60,6 @@
             </div>
         </div>
     </section>
-
-
     <section class="product-bg section-30" id="get-in-touch">
         <div class="shell text-center text-md-left">
             <h3 class="font-adonide_bold">GET IN TOUCH</h3>

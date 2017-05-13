@@ -7,10 +7,14 @@
                     <div class="shell">
                         <div class="range">
                             <div class="cell-sm-11 cell-md-10 cell-lg-9">
-                                <h2 data-caption-animate="fadeInUp" data-caption-delay="0s" class="slider-header slider-header-index">
+                                <h2 data-caption-animate="fadeInUp" data-caption-delay="0s"
+                                    style="color: {{ $ad->color }}"
+                                    class="slider-header slider-header-index">
                                     {{ $ad->title }}
                                 </h2>
-                                <p data-caption-animate="fadeInUp" data-caption-delay="100" class="slider-text-index slider-text">
+                                <p data-caption-animate="fadeInUp" data-caption-delay="100"
+                                   style="color: {{ $ad->color }}"
+                                   class="slider-text-index slider-text">
                                     {{ $ad->description}}
                                 </p>
                                 @if($ad->link)
